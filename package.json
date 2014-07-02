@@ -4,8 +4,11 @@
   "activationEvents": [],
   "main": "./lib/init",
   "version": "0.0.1",
-  "description": "Lint Lua on the fly, using luac -p (not yet ready)",
-  "repository": "https://github.com/AtomLinter/linter-lua",
+  "description": "Lint Lua on the fly, using luac -p",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtomLinter/linter-lua"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
