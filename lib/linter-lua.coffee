@@ -14,13 +14,12 @@ class LinterLua extends Linter
 
   # A regex pattern used to extract information from the executable's output.
   regex:
-    '.+?:.+?:' +
+    '^.+?:.+?:' +
     '(?<line>\\d+):\\s+' +
-    '(?<message>.*)'
+    '(?<message>.+?' +
+    '(?:near (?<near>\'.+\')|$))'
 
   errorStream: 'stderr'
-
-  regexFlags: 's'
 
   constructor: (editor) ->
     super(editor)
