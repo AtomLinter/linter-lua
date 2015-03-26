@@ -6,10 +6,6 @@ class LinterLua extends Linter
   # list/tuple of strings. Names should be all lowercase.
   @syntax: 'source.lua'
 
-  # A string, list, tuple or callable that returns a string, list or tuple,
-  # containing the command line (with arguments) used to lint.
-  cmd: 'luac -p'
-
   linterName: 'luac'
 
   # A regex pattern used to extract information from the executable's output.
@@ -24,10 +20,17 @@ class LinterLua extends Linter
   constructor: (editor) ->
     super(editor)
 
-    atom.config.observe 'linter-lua.luacExecutablePath', =>
-            @executablePath = atom.config.get 'linter-lua.luacExecutablePath'
+    # Set to observe config options
+    atom.config.observe 'linter-lua.executable', => @updateCommand()
+
+  updateCommand: ->
+    executable = atom.config.get 'linter-lua.executable'
+    if /luajit[^\\/]*$/.test(executable)
+        @cmd = [executable, '-bl']
+    else
+        @cmd = [executable, '-p']
 
   destroy: ->
-    atom.config.unobserve 'linter-lua.luacExecutablePath'
+    atom.config.unobserve 'linter-lua.executable'
 
 module.exports = LinterLua
