@@ -21,7 +21,7 @@ class LinterLua extends Linter
     super(editor)
 
     # Set to observe config options
-    atom.config.observe 'linter-lua.executable', => @updateCommand()
+    @configSubscription = atom.config.observe 'linter-lua.executable', => @updateCommand()
 
   updateCommand: ->
     executable = atom.config.get 'linter-lua.executable'
@@ -31,6 +31,7 @@ class LinterLua extends Linter
         @cmd = [executable, '-p']
 
   destroy: ->
-    atom.config.unobserve 'linter-lua.executable'
+    super
+    @configSubscription.dispose()
 
 module.exports = LinterLua
