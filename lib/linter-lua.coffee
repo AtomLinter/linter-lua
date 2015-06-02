@@ -13,7 +13,7 @@ class LinterLua extends Linter
     '^.+?:.+?:' +
     '(?<line>\\d+):\\s+' +
     '(?<message>.+?' +
-    '(?:near (?<near>\'.+\')|$))'
+    '(?:near (?<near>.+)|$))'
 
   errorStream: 'stderr'
 
