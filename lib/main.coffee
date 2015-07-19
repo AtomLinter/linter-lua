@@ -21,8 +21,8 @@ module.exports =
       '(?:near (?<near>.+)|$))'
     provider =
       grammarScopes: ['source.lua']
-      scope: 'file' # or 'project'
-      lintOnFly: false # must be false for scope: 'project'
+      scope: 'file'
+      lintOnFly: true
       lint: (textEditor) =>
         parameters = []
         if @executablePath.indexOf('luajit') isnt -1
