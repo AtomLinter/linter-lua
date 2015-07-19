@@ -23,7 +23,13 @@ module.exports =
       grammarScopes: ['source.lua']
       scope: 'file' # or 'project'
       lintOnFly: false # must be false for scope: 'project'
-      lint: (textEditor) ->
-        return new Promise (resolve, reject)->
-          message = {type: 'Error', text: 'Something went wrong', range:[[0,0], [0,1]]}
-          resolve([message])
+      lint: (textEditor) =>
+        parameters = []
+        if @executablePath.indexOf('luajit') isnt -1
+          parameters.push('-bl')
+        else
+          parameters.push('-p')
+        parameters.push('-') # to indicate that the input is in stdin
+        return helpers.exec(@executablePath, parameters, {stdin: textEditor.getText()}).then (output) ->
+          console.log(output)
+          return []
