@@ -14,11 +14,16 @@ module.exports =
     @subscriptions.dispose()
   provideLinter: ->
     helpers = require('atom-linter')
+    regex = \
+    '^.+?:.+?:' +
+      '(?<line>\\d+):\\s+' +
+      '(?<message>.+?' +
+      '(?:near (?<near>\'.+\')|$))'
     provider =
       grammarScopes: ['source.lua']
       scope: 'file' # or 'project'
       lintOnFly: false # must be false for scope: 'project'
-      lint: (textEditor)->
+      lint: (textEditor) ->
         return new Promise (resolve, reject)->
           message = {type: 'Error', text: 'Something went wrong', range:[[0,0], [0,1]]}
           resolve([message])
