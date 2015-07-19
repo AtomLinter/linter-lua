@@ -18,7 +18,7 @@ module.exports =
     '^.+?:.+?:' +
       '(?<line>\\d+):\\s+' +
       '(?<message>.+?' +
-      '(?:near (?<near>\'.+\')|$))'
+      '(?:near (?<near>.+)|$))'
     provider =
       grammarScopes: ['source.lua']
       scope: 'file' # or 'project'
