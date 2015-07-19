@@ -30,6 +30,7 @@ module.exports =
         else
           parameters.push('-p')
         parameters.push('-') # to indicate that the input is in stdin
-        return helpers.exec(@executablePath, parameters, {stdin: textEditor.getText()}).then (output) ->
-          console.log(output)
-          return []
+        return helpers.exec(@executablePath, parameters, {stdin: textEditor.getText(), stream: 'stderr'}).then (output) ->
+          return helpers.parse(output, regex, filePath: textEditor.getPath()).map (error) ->
+            error.type = 'Error'
+            return error
