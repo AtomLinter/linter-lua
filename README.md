@@ -12,9 +12,3 @@ Before using this package, you must ensure that `luac` or `luajit` is installed 
 
 * `$ apm install linter` (if you don't have [AtomLinter/Linter](https://github.com/AtomLinter/Linter) installed).
 * `$ apm install linter-lua`
-
-#### Configuration
-
-Atom -> Preferences... -> Packages -> Linter lua -> Settings:
-
-* **Executable** Path to your `luac` or `luajit` executable.
