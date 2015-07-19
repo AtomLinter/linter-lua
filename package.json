@@ -1,7 +1,6 @@
 {
   "name": "linter-lua",
-  "linter-package": true,
-  "main": "./lib/init",
+  "main": "./lib/main",
   "version": "0.1.6",
   "description": "Lint Lua on the fly, using luac -p or luajit -bl",
   "repository": {
@@ -9,8 +8,14 @@
     "url": "https://github.com/AtomLinter/linter-lua"
   },
   "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
+  "dependencies": {
+    "atom-linter": "^2.0.0"
   },
-  "dependencies": {}
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
 }
