@@ -1,10 +1,19 @@
+{CompositeDisposable} = require('atom')
+
 module.exports =
   config:
-    executable:
+    executablePath:
       type: 'string'
       default: 'luac'
       description: 'The executable path to luac or luajit.'
+  activate: ->
+    @subscriptions = new CompositeDisposable
+    @subscriptions.add atom.config.observe 'linter-lua.executablePath', (executablePath) =>
+      @executablePath = executablePath
+  deactivate: ->
+    @subscriptions.dispose()
   provideLinter: ->
+    helpers = require('atom-linter')
     provider =
       grammarScopes: ['source.lua']
       scope: 'file' # or 'project'
