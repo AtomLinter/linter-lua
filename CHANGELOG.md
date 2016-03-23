@@ -1,7 +1,24 @@
 # Change Log
 
-## [1.0.1](https://github.com/AtomLinter/linter-lua/tree/1.0.1) (2015-12-30)
-[Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.0...1.0.1)
+## [v1.0.2](https://github.com/AtomLinter/linter-lua/tree/v1.0.2) (2016-03-23)
+[Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.1...v1.0.2)
+
+**Closed issues:**
+
+- Install `linter` automatically. [\#16](https://github.com/AtomLinter/linter-lua/issues/16)
+
+**Merged pull requests:**
+
+- Added linter as a package-deps - issue \#16 [\#32](https://github.com/AtomLinter/linter-lua/pull/32) ([gforge](https://github.com/gforge))
+- atom-linter@4.6.1 untested ⚠️ [\#31](https://github.com/AtomLinter/linter-lua/pull/31) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.5.0 untested ⚠️ [\#26](https://github.com/AtomLinter/linter-lua/pull/26) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.4.0 untested ⚠️ [\#25](https://github.com/AtomLinter/linter-lua/pull/25) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.3.4 untested ⚠️ [\#24](https://github.com/AtomLinter/linter-lua/pull/24) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.3.1 untested ⚠️ [\#21](https://github.com/AtomLinter/linter-lua/pull/21) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.3.0 untested ⚠️ [\#20](https://github.com/AtomLinter/linter-lua/pull/20) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+## [v1.0.1](https://github.com/AtomLinter/linter-lua/tree/v1.0.1) (2015-12-30)
+[Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.0...v1.0.1)
 
 **Merged pull requests:**
 
