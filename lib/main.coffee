@@ -7,6 +7,7 @@ module.exports =
       default: 'luac'
       description: 'The executable path to luac or luajit.'
   activate: ->
+    require('atom-package-deps').install('linter-lua');
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.config.observe 'linter-lua.executablePath', (executablePath) =>
       @executablePath = executablePath
