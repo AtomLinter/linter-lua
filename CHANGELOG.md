@@ -3,12 +3,9 @@
 ## [v1.0.2](https://github.com/AtomLinter/linter-lua/tree/v1.0.2) (2016-03-23)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.1...v1.0.2)
 
-**Closed issues:**
+**Implemented enhancements:**
 
 - Install `linter` automatically. [\#16](https://github.com/AtomLinter/linter-lua/issues/16)
-
-**Merged pull requests:**
-
 - Added linter as a package-deps - issue \#16 [\#32](https://github.com/AtomLinter/linter-lua/pull/32) ([gforge](https://github.com/gforge))
 - atom-linter@4.6.1 untested ⚠️ [\#31](https://github.com/AtomLinter/linter-lua/pull/31) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 - atom-linter@4.5.0 untested ⚠️ [\#26](https://github.com/AtomLinter/linter-lua/pull/26) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
@@ -20,7 +17,7 @@
 ## [v1.0.1](https://github.com/AtomLinter/linter-lua/tree/v1.0.1) (2015-12-30)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.0...v1.0.1)
 
-**Merged pull requests:**
+**Implemented enhancements:**
 
 - atom-linter@4.2.0 untested ⚠️ [\#19](https://github.com/AtomLinter/linter-lua/pull/19) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 - Update atom-linter to version 4.1.1 🚀 [\#18](https://github.com/AtomLinter/linter-lua/pull/18) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
@@ -33,35 +30,27 @@
 - Object.activate is deprecated. [\#13](https://github.com/AtomLinter/linter-lua/issues/13)
 - Upgrade to the latest API [\#14](https://github.com/AtomLinter/linter-lua/pull/14) ([steelbrain](https://github.com/steelbrain))
 
-**Closed issues:**
+**Fixed bugs:**
 
 - Upcoming linter changes [\#12](https://github.com/AtomLinter/linter-lua/issues/12)
-
-**Merged pull requests:**
-
 - Fix regex [\#11](https://github.com/AtomLinter/linter-lua/pull/11) ([yongkangchen](https://github.com/yongkangchen))
 
 ## [v0.1.6](https://github.com/AtomLinter/linter-lua/tree/v0.1.6) (2015-05-22)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v0.1.5...v0.1.6)
 
-**Closed issues:**
+**Implemented enhancements:**
 
-- Package.getActivationCommands is deprecated. [\#9](https://github.com/AtomLinter/linter-lua/issues/9)
-- Package.getActivationCommands is deprecated. [\#7](https://github.com/AtomLinter/linter-lua/issues/7)
 - How to configure path to Luac executable? [\#5](https://github.com/AtomLinter/linter-lua/issues/5)
 
-**Merged pull requests:**
+**Fixed bugs:**
 
+- Package.getActivationCommands is deprecated. [\#7](https://github.com/AtomLinter/linter-lua/issues/7)
 - Replaced activationEvents with activationCommands [\#10](https://github.com/AtomLinter/linter-lua/pull/10) ([Fank](https://github.com/Fank))
 
 ## [v0.1.5](https://github.com/AtomLinter/linter-lua/tree/v0.1.5) (2015-03-29)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v0.1.3...v0.1.5)
 
-**Closed issues:**
-
-- Uncaught Error: spawn ENOENT  [\#4](https://github.com/AtomLinter/linter-lua/issues/4)
-
-**Merged pull requests:**
+**Fixed bugs:**
 
 - Support `luajit -bl` and add settings to set luac or luajit path. [\#6](https://github.com/AtomLinter/linter-lua/pull/6) ([xpol](https://github.com/xpol))
 
@@ -71,21 +60,21 @@
 ## [v0.1.2](https://github.com/AtomLinter/linter-lua/tree/v0.1.2) (2014-07-28)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v0.1.1...v0.1.2)
 
-**Merged pull requests:**
+**Fixed bugs:**
 
 - Fixed typo in tslint link description [\#3](https://github.com/AtomLinter/linter-lua/pull/3) ([jordanbtucker](https://github.com/jordanbtucker))
 
 ## [v0.1.1](https://github.com/AtomLinter/linter-lua/tree/v0.1.1) (2014-07-10)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v0.1.0...v0.1.1)
 
-**Merged pull requests:**
+**Fixed bugs:**
 
 - Updated Regex [\#2](https://github.com/AtomLinter/linter-lua/pull/2) ([Sinaloit](https://github.com/Sinaloit))
 
 ## [v0.1.0](https://github.com/AtomLinter/linter-lua/tree/v0.1.0) (2014-07-03)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v0.0.1...v0.1.0)
 
-**Merged pull requests:**
+**Implemented enhancements:**
 
 - Working Lua Linter [\#1](https://github.com/AtomLinter/linter-lua/pull/1) ([Sinaloit](https://github.com/Sinaloit))
 
