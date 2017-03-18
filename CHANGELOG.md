@@ -1,5 +1,14 @@
 # Change Log
 
+## [v1.0.3](https://github.com/AtomLinter/linter-lua/tree/v1.0.3) (2017-03-18)
+[Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.2...v1.0.3)
+
+**Implemented enhancements:**
+
+- Update atom-linter to the latest version 🚀 [\#45](https://github.com/AtomLinter/linter-lua/pull/45) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update atom-linter to version 8.0.0 🚀 [\#43](https://github.com/AtomLinter/linter-lua/pull/43) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update atom-linter to version 6.0.0 🚀 [\#38](https://github.com/AtomLinter/linter-lua/pull/38) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
 ## [v1.0.2](https://github.com/AtomLinter/linter-lua/tree/v1.0.2) (2016-03-23)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.1...v1.0.2)
 
