@@ -31,7 +31,12 @@ module.exports =
         else
           parameters.push('-p')
         parameters.push('-') # to indicate that the input is in stdin
-        return helpers.exec(@executablePath, parameters, {stdin: textEditor.getText(), stream: 'stderr'}).then (output) ->
+        execOpts =
+          stdin: textEditor.getText()
+          stream: 'stderr'
+          allowEmptyStderr: true
+
+        return helpers.exec(@executablePath, parameters, execOpts).then (output) ->
           return helpers.parse(output, regex, filePath: textEditor.getPath()).map (error) ->
             error.type = 'Error'
             return error
