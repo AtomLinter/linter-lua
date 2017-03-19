@@ -1,5 +1,13 @@
 # Change Log
 
+## [v1.0.4](https://github.com/AtomLinter/linter-lua/tree/v1.0.4) (2017-03-19)
+[Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.3...v1.0.4)
+
+**Fixed bugs:**
+
+- \[Linter\] Error running Unknown Error: Process exited with no output, code: 0 [\#46](https://github.com/AtomLinter/linter-lua/issues/46)
+- Allow stderr to be empty [\#47](https://github.com/AtomLinter/linter-lua/pull/47) ([Arcanemagus](https://github.com/Arcanemagus))
+
 ## [v1.0.3](https://github.com/AtomLinter/linter-lua/tree/v1.0.3) (2017-03-18)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.2...v1.0.3)
 
