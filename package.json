@@ -2,6 +2,7 @@
   "name": "linter-lua",
   "main": "./lib/main",
   "version": "1.0.4",
+  "private": true,
   "description": "Lint Lua on the fly, using luac -p or luajit -bl",
   "repository": {
     "type": "git",
@@ -21,5 +22,20 @@
         "1.0.0": "provideLinter"
       }
     }
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "semanticCommits": true,
+    "rangeStrategy": "pin",
+    "packageRules": [
+      {
+        "packagePatterns": [
+          "^eslint"
+        ],
+        "groupName": "ESLint packages"
+      }
+    ]
   }
 }
