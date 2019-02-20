@@ -6,17 +6,18 @@ matrix:
   include:
     - os: linux
       env: ATOM_CHANNEL=stable
-      lua: lua5.1
-      lua: luajit2.1
 
     - os: linux
       env: ATOM_CHANNEL=beta
-      lua: lua5.1
-      lua: luajit2.1
 
 env:
   global:
     APM_TEST_PACKAGES: "language-lua"
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install --assume-yes --quiet --no-install-suggests \
+    --no-install-recommends lua5.1 luajit   
 
 before_script:
   - luac -version
