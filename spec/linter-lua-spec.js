@@ -27,7 +27,7 @@ describe('The Lua provider for Linter', () => {
     expect(messages[0].severity).toBe('error');
     expect(messages[0].excerpt).toBe(excerpt);
     expect(messages[0].location.file).toBe(badFile);
-    expect(messages[0].location.position).toEqual([[17, 2], [17, 48]]);
+    expect(messages[0].location.position).toEqual([[18, 0], [18, 3]]);
   });
 
   it('checks a file with syntax error with luajit and reports the correct message', async () => {
@@ -40,7 +40,7 @@ describe('The Lua provider for Linter', () => {
     expect(messages[0].severity).toBe('error');
     expect(messages[0].excerpt).toBe(excerpt);
     expect(messages[0].location.file).toBe(badFile);
-    expect(messages[0].location.position).toEqual([[17, 2], [17, 48]]);
+    expect(messages[0].location.position).toEqual([[18, 0], [18, 3]]);
   });
 
   it('finds nothing wrong with a valid file using luac', async () => {
