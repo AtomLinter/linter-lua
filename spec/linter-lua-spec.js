@@ -17,9 +17,6 @@ describe('The dummy provider for Linter', () => {
     await atom.packages.activatePackage('linter-lua');
   });
 
-  // TODO: Probar también con luajit
-  // atom.config.set('linter-lua.executablePath', 'luajit');
-
   it('checks a file with syntax error with luac and reports the correct message', async () => {
     atom.config.set('linter-lua.executablePath', 'luac');
     const excerpt = "')' expected (to close '(' at line 18) near 'end'";
