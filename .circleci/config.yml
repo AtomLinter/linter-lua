@@ -15,7 +15,11 @@ defaults: &defaults
         command: |
           sudo apt-get update && \
           sudo apt-get install --assume-yes --quiet --no-install-suggests \
-            --no-install-recommends lua5.3 luajit
+            --no-install-recommends lua5.3 luajit && \
+          sudo update-alternatives --install /usr/bin/lua lua-interpreter \
+            /usr/bin/lua5.3 130 --slave /usr/share/man/man1/lua.1.gz lua-manual /usr/share/man/man1/lua5.3.1.gz && \
+          sudo update-alternatives --install /usr/bin/luac lua-compiler \
+            /usr/bin/luac5.3 130 --slave /usr/share/man/man1/luac.1.gz lua-compiler-manual /usr/share/man/man1/luac5.3.1.gz
     - run:
         name: Luac version
         command: luac -v
