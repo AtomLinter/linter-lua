@@ -11,7 +11,7 @@ const { lint } = require('../lib/init.js').provideLinter();
 const badFile = path.join(__dirname, 'fixtures', 'bad.lua');
 const goodFile = path.join(__dirname, 'fixtures', 'good.lua');
 
-describe('The dummy provider for Linter', () => {
+describe('The Lua provider for Linter', () => {
   beforeEach(async () => {
     atom.workspace.destroyActivePaneItem();
     await atom.packages.activatePackage('linter-lua');
