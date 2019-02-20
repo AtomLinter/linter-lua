@@ -16,7 +16,7 @@ defaults: &defaults
         command: |
           sudo apt-get update && \
           sudo apt-get install --assume-yes --quiet --no-install-suggests \
-            --no-install-recommends lua5.1 luajit
+            --no-install-recommends lua5.3 luajit
     - run:
         name: Luac version
         command: luac -v
