@@ -1,5 +1,22 @@
 # Change Log
 
+## [v2.0.0](https://github.com/AtomLinter/linter-lua/tree/v2.0.0) (2019-02-20)
+[Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.4...v2.0.0)
+
+**Implemented enhancements:**
+
+- Implement specs [\#22](https://github.com/AtomLinter/linter-lua/issues/22)
+- chore\(deps\): update dependency eslint to v5.14.1 [\#55](https://github.com/AtomLinter/linter-lua/pull/55) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): pin dependencies [\#53](https://github.com/AtomLinter/linter-lua/pull/53) ([renovate[bot]](https://github.com/apps/renovate))
+- Configure Renovate [\#52](https://github.com/AtomLinter/linter-lua/pull/52) ([renovate[bot]](https://github.com/apps/renovate))
+- Update atom-package-deps to version 5.0.0 🚀 [\#50](https://github.com/AtomLinter/linter-lua/pull/50) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update atom-linter to version 10.0.0 🚀 [\#48](https://github.com/AtomLinter/linter-lua/pull/48) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
+**Fixed bugs:**
+
+- Support v2 Linter API [\#51](https://github.com/AtomLinter/linter-lua/issues/51)
+- V2 linter API support [\#54](https://github.com/AtomLinter/linter-lua/pull/54) ([vzamanillo](https://github.com/vzamanillo))
+
 ## [v1.0.4](https://github.com/AtomLinter/linter-lua/tree/v1.0.4) (2017-03-19)
 [Full Changelog](https://github.com/AtomLinter/linter-lua/compare/v1.0.3...v1.0.4)
 
@@ -13,7 +30,7 @@
 
 **Implemented enhancements:**
 
-- Update atom-linter to the latest version 🚀 [\#45](https://github.com/AtomLinter/linter-lua/pull/45) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update atom-linter to version 9.0.0 🚀 [\#45](https://github.com/AtomLinter/linter-lua/pull/45) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - Update atom-linter to version 8.0.0 🚀 [\#43](https://github.com/AtomLinter/linter-lua/pull/43) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 - Update atom-linter to version 6.0.0 🚀 [\#38](https://github.com/AtomLinter/linter-lua/pull/38) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 
