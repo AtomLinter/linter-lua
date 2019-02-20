@@ -19,7 +19,7 @@ before_install:
   - sudo apt-get install --assume-yes --quiet --no-install-suggests --no-install-recommends lua5.1 luajit
 
 before_script:
-  - luac -version
+  - luac -v
   - luajit -v
 
 ### Generic setup follows ###

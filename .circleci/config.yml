@@ -19,10 +19,10 @@ defaults: &defaults
             --no-install-recommends lua5.1 luajit
     - run:
         name: Luac version
-        command: luac -version
+        command: luac -v
     - run:
         name: Luajit version
-        command: luajit -version
+        command: luajit -v
     - run:
         name: Create VFB for Atom to run in
         command: /usr/local/bin/xvfb_start
