@@ -1,6 +1,5 @@
 {
   "name": "linter-lua",
-  "linter-package": true,
   "main": "./lib/init",
   "version": "1.0.4",
   "private": true,
