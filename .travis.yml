@@ -16,7 +16,7 @@ env:
 
 install:
   - sudo apt-get update
-  - sudo apt-get install --assume-yes --quiet --no-install-suggests --no-install-recommends lua5.3 luajit
+  - sudo apt-get install --assume-yes --quiet --no-install-suggests --no-install-recommends lua5.2 luajit
 
 before_script:
   - luac -v
