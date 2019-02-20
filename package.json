@@ -1,6 +1,7 @@
 {
   "name": "linter-lua",
-  "main": "./lib/main",
+  "linter-package": true,
+  "main": "./lib/init",
   "version": "1.0.4",
   "private": true,
   "description": "Lint Lua on the fly, using luac -p or luajit -bl",
@@ -9,19 +10,29 @@
     "url": "https://github.com/AtomLinter/linter-lua"
   },
   "license": "MIT",
+  "engines": {
+    "atom": ">=1.9.0 <2.0.0"
+  },
+  "configSchema": {
+    "executablePath": {
+      "type": "string",
+      "description": "The path to the `luac` or `luajit` executable. Find by running `which luac` or `which luajit`",
+      "default": "luac"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "atom --test spec"
+  },
   "dependencies": {
     "atom-linter": "10.0.0",
     "atom-package-deps": "5.0.0"
   },
-  "package-deps": [
-    "linter"
-  ],
-  "providedServices": {
-    "linter": {
-      "versions": {
-        "1.0.0": "provideLinter"
-      }
-    }
+  "devDependencies": {
+    "eslint": "5.13.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "jasmine-fix": "1.3.1"
   },
   "renovate": {
     "extends": [
@@ -37,5 +48,36 @@
         "groupName": "ESLint packages"
       }
     ]
+  },
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
   }
 }
