@@ -11,7 +11,7 @@ defaults: &defaults
     - attach_workspace:
         at: /tmp
     - run:
-        name: Install Ruby
+        name: Install luac and luajit
         # Note, using ruby-full instead of ruby for the headers to compile rubocop
         command: |
           sudo apt-get update && \
