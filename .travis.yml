@@ -42,7 +42,7 @@ git:
 
 sudo: false
 
-dist: trusty
+dist: xenial
 
 addons:
   apt:
@@ -51,3 +51,4 @@ addons:
     - fakeroot
     - git
     - libsecret-1-dev
+    - libgconf-2-4
