@@ -15,5 +15,5 @@ on your system.
 ### Package installation
 
 ```ShellSession
-apm install linter linter-lua
+apm install linter linter-lua language-lua
 ```
